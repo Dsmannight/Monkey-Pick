@@ -16,22 +16,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd1-MC-ivb">
-                                <rect key="frame" x="66.5" y="423.5" width="281" height="49"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Get Random Stock">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="randomStockBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2J-lH-joH"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monkey" translatesAutoresizingMaskIntoConstraints="NO" id="wqY-i9-fMK">
+                                <rect key="frame" x="-83" y="-2" width="580" height="900"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dim-ja-Gcu">
+                                <rect key="frame" x="25" y="198" width="364" height="500"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd1-MC-ivb">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="49"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Monkey Pick Misc">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                            <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="randomStockBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2J-lH-joH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tI-A2-52O">
+                                        <rect key="frame" x="0.0" y="150.5" width="364" height="49"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Monkey Pick Tech">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                            <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="techBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3K-kB-w1N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7k0-F4-zbc">
+                                        <rect key="frame" x="0.0" y="300.5" width="364" height="49"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Monkey Pick Health Care">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                            <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="healthBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sxi-HB-XPu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjG-hE-Fni">
+                                        <rect key="frame" x="0.0" y="451" width="364" height="49"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Monkey Pick Finance">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                            <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="financeBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUI-vU-Mfc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="tVe-X2-YNH"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fd1-MC-ivb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ev7-XA-d9a"/>
-                            <constraint firstItem="fd1-MC-ivb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yTu-7q-Ia2"/>
+                            <constraint firstItem="dim-ja-Gcu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vyq-JO-uM0"/>
+                            <constraint firstItem="wqY-i9-fMK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZrA-yn-UTN"/>
+                            <constraint firstItem="dim-ja-Gcu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fj5-co-0g8"/>
+                            <constraint firstItem="wqY-i9-fMK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z3I-56-wjV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -50,17 +97,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="KHm-Bn-h4c">
-                                <rect key="frame" x="57" y="206" width="300" height="430"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jungle" translatesAutoresizingMaskIntoConstraints="NO" id="7LP-9R-CO2">
+                                <rect key="frame" x="-527" y="-79" width="1468" height="1000"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" spacing="-42" translatesAutoresizingMaskIntoConstraints="NO" id="KHm-Bn-h4c">
+                                <rect key="frame" x="57" y="246.5" width="300" height="349"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPc-pQ-WoR">
-                                        <rect key="frame" x="125.5" y="0.0" width="49" height="23.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPc-pQ-WoR">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="5wb-HP-A60"/>
+                                            <constraint firstAttribute="width" constant="300" id="x0D-hI-iYF"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3a-vP-oVe">
-                                        <rect key="frame" x="0.0" y="101.5" width="300" height="100"/>
+                                        <rect key="frame" x="0.0" y="100" width="300" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="3BC-vr-zHg"/>
                                             <constraint firstAttribute="width" constant="300" id="tM1-kX-aSx"/>
@@ -69,31 +123,39 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJh-8d-JrL">
-                                        <rect key="frame" x="125.5" y="279.5" width="49" height="23.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJh-8d-JrL">
+                                        <rect key="frame" x="0.0" y="200" width="300" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="UU0-l7-q76"/>
+                                            <constraint firstAttribute="height" constant="100" id="VUM-mS-lvs"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbV-B2-Vdz">
-                                        <rect key="frame" x="9.5" y="381" width="281" height="49"/>
+                                        <rect key="frame" x="0.0" y="300" width="300" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="281" id="fmU-d0-cqC"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Back &lt;">
+                                        <buttonConfiguration key="configuration" style="filled" title="Back &lt;">
                                             <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                            <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="goBack:" destination="zMf-U5-M2J" eventType="touchUpInside" id="eKp-Y4-U4n"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Egf-5b-Lhl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7LP-9R-CO2" firstAttribute="centerX" secondItem="aTG-uB-S5o" secondAttribute="centerX" id="AL2-hS-ogm"/>
+                            <constraint firstItem="7LP-9R-CO2" firstAttribute="centerY" secondItem="aTG-uB-S5o" secondAttribute="centerY" id="mV3-km-rSq"/>
                             <constraint firstItem="KHm-Bn-h4c" firstAttribute="centerX" secondItem="aTG-uB-S5o" secondAttribute="centerX" id="nP9-Ew-jMf"/>
                             <constraint firstItem="KHm-Bn-h4c" firstAttribute="centerY" secondItem="aTG-uB-S5o" secondAttribute="centerY" id="uqx-kd-lj3"/>
                         </constraints>
@@ -111,6 +173,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Jungle" width="1468" height="1000"/>
+        <image name="Monkey" width="580" height="900"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

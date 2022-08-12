@@ -29,6 +29,27 @@ class MonkeyViewController: UIViewController, StockPickerDelegate {
         self.performSegue(withIdentifier: "goToStocks", sender: self)
     }
     
+    @IBAction func financeBtnPressed(_ sender: UIButton) {
+        //Call readLocalFile from StockPicker
+        stockPicker.readLocalFile(jsonFile: "financeStocks")
+        
+        self.performSegue(withIdentifier: "goToStocks", sender: self)
+    }
+    
+    @IBAction func techBtnPressed(_ sender: UIButton) {
+        //Call readLocalFile from StockPicker
+        stockPicker.readLocalFile(jsonFile: "techStocks")
+        
+        self.performSegue(withIdentifier: "goToStocks", sender: self)
+    }
+    
+    @IBAction func healthBtnPressed(_ sender: UIButton) {
+        //Call readLocalFile from StockPicker
+        stockPicker.readLocalFile(jsonFile: "healthCareStocks")
+        
+        self.performSegue(withIdentifier: "goToStocks", sender: self)
+    }
+    
     func pickedRandomStock(stock: StockModel) {
         //Make current view main
         DispatchQueue.main.async {
