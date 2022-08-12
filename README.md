@@ -16,8 +16,8 @@ Swift version 5.1
 ## Demo
 
 <div>
-  <img src="https://github.com/Dsmannight/Monkey-Pick/blob/main/Demos/Initial.png" height="550">
-  <img src="https://github.com/Dsmannight/Monkey-Pick/blob/main/Demos/Pressed.png" height="550">
+  <img src="https://github.com/Dsmannight/Monkey-Pick/blob/main/Demos/MonkeyDemo.PNG" height="550">
+  <img src="https://github.com/Dsmannight/Monkey-Pick/blob/main/Demos/PressedDemo.PNG" height="550">
 </div>
 
 Starting out the app, there will be three labels. When the *Get Random Stock* button the random ticker, the company name, and the industry of the company will fill the labels.
