@@ -22,31 +22,39 @@ class MonkeyViewController: UIViewController, StockPickerDelegate {
         stockPicker.readLocalFile(jsonFile: "miscStocks")
     }
     
+    //Monkey Pick Misc
     @IBAction func randomStockBtnPressed(_ sender: UIButton) {
         //Call readLocalFile from StockPicker
         stockPicker.readLocalFile(jsonFile: "miscStocks")
         
+        //Go to next page
         self.performSegue(withIdentifier: "goToStocks", sender: self)
     }
     
+    //Monkey Pick Finance
     @IBAction func financeBtnPressed(_ sender: UIButton) {
         //Call readLocalFile from StockPicker
         stockPicker.readLocalFile(jsonFile: "financeStocks")
         
+        //Go to next page
         self.performSegue(withIdentifier: "goToStocks", sender: self)
     }
     
+    //Monkey Pick Tech
     @IBAction func techBtnPressed(_ sender: UIButton) {
         //Call readLocalFile from StockPicker
         stockPicker.readLocalFile(jsonFile: "techStocks")
         
+        //Go to next page
         self.performSegue(withIdentifier: "goToStocks", sender: self)
     }
     
+    //Monkey Pick Health Care
     @IBAction func healthBtnPressed(_ sender: UIButton) {
         //Call readLocalFile from StockPicker
         stockPicker.readLocalFile(jsonFile: "healthCareStocks")
         
+        //Go to next page
         self.performSegue(withIdentifier: "goToStocks", sender: self)
     }
     
@@ -60,9 +68,14 @@ class MonkeyViewController: UIViewController, StockPickerDelegate {
         }
     }
     
+    //Passes information through segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //When the segue is on the second page
         if segue.identifier == "goToStocks" {
+            //Change view
             let destinationVC = segue.destination as! StockViewController
+            
+            //Change variables
             destinationVC.ticker =  self.ticker
             destinationVC.name =  self.name
             destinationVC.industry =  self.industry
